@@ -1,0 +1,25 @@
+#N canvas 474 339 450 300 10;
+#X floatatom 101 118 5 0 1000 0 - - -, f 5;
+#X floatatom 101 137 5 0 0 0 - - -, f 5;
+#X obj 100 100 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 120 100 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 51 208 s offset;
+#X obj 51 227 s semitones;
+#X obj 51 178 f;
+#X obj 81 178 f;
+#X obj 51 98 inlet;
+#X obj 51 120 spigot;
+#X obj 100 70 loadbang;
+#X connect 0 0 6 1;
+#X connect 1 0 7 1;
+#X connect 2 0 9 1;
+#X connect 6 0 4 0;
+#X connect 7 0 5 0;
+#X connect 8 0 9 0;
+#X connect 9 0 6 0;
+#X connect 9 0 7 0;
+#X connect 9 0 3 0;
+#X connect 10 0 2 0;
+#X coords 0 -1 1 1 35 54 2 100 100;
